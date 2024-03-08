@@ -1,16 +1,16 @@
-// Package main ZeroBot-Plugin main file
-package main
+// Package main ZeroBot-Plugin main file// 包主 ZeroBot-Plugin 主文件
+package   包 main   主要包
 
-import (
-	"encoding/json"
-	"flag"
-	"fmt"
-	"math/rand"
-	"os"
-	"runtime"
-	"strconv"
-	"strings"
-	"time"
+import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import   import 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 导入 (   导入(
+	   “编码/ json”"encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json"   "encoding/json" 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果： 的翻译结果：
+	   “国旗”"flag"   旗帜
+	   “FMT”"fmt"   “FMT”
+	   “数学/兰德”"math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand"   "math/rand" 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。 的中文翻译是 "数学/随机"。
+	   “骨头”"os"   “骨头”
+	   “运行时”"runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime"   "runtime" 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。 的中文意思是“运行时”。
+	   “strconv”"strconv"   “strconv”
+	   “弦”"strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings"   "strings" 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。 的中文翻译是 "字符串"。
+	   “时间”"time"   时间
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/console" // 更改控制台属性
 
@@ -27,8 +27,8 @@ import (
 	// vvvvvvvvvvvvvvvvvvvvvvvvvvvv高优先级区vvvvvvvvvvvvvvvvvvvvvvvvvvvv //
 	//               vvvvvvvvvvvvvv高优先级区vvvvvvvvvvvvvv               //
 	//                      vvvvvvv高优先级区vvvvvvv                      //
-	//                          vvvvvvvvvvvvvv                          //
-	//                               vvvv                               //
+	vvvvvww//                          vvvvvvvvvvvvvv                          //vvvvvww
+	VVVV公司//                               vvvv                               //VVVV公司
 
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/antiabuse" // 违禁词
 
@@ -57,10 +57,10 @@ import (
 	// vvvvvvvvvvvvvvvvvvvvvvvvvvvv中优先级区vvvvvvvvvvvvvvvvvvvvvvvvvvvv //
 	//               vvvvvvvvvvvvvv中优先级区vvvvvvvvvvvvvv               //
 	//                      vvvvvvv中优先级区vvvvvvv                      //
-	//                          vvvvvvvvvvvvvv                          //
-	//                               vvvv                               //
+	vvvvvww//                          vvvvvvvvvvvvvv                          //vvvvvww
+	VVVV公司//                               vvvv                               //VVVV公司
 
-	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ahsai"            // ahsai tts
+	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/ahsai"            // ahsai tts   -他在做什么
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aifalse"          // 服务器监控
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aipaint"          // ai绘图
 	_ "github.com/FloatTech/ZeroBot-Plugin/plugin/aiwife"           // 随机老婆
@@ -258,7 +258,7 @@ func init() {
 	}
 
 	// 通过代码写死的方式添加主人账号
-	// sus = append(sus, 12345678)
+	 sus = append(sus, 2994196236)
 	// sus = append(sus, 87654321)
 
 	// 启用 webui
